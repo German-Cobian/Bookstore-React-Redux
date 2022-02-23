@@ -6,6 +6,10 @@ import './index.css';
 import { BrowserRouter as Router } from 'react-router-dom';
 import App from './App';
 
+// fetch('https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/', {
+//   method: 'POST',
+// }).then((response) => response.text()).then((response) => console.log(response));
+
 ReactDOM.render(
   <React.StrictMode>
     <Router>

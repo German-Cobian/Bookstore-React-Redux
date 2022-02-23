@@ -18,7 +18,7 @@ const BookForm = () => {
       author,
       chapter: 1,
       completed: 75,
-      id: uuidv4(),
+      item_id: uuidv4(),
     };
     dispatch(addBook(newBook));
     setCategory('');
