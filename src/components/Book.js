@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 import { removeBook } from '../redux/reducers/books';
-/* eslint-disable camelcase */
 
 const Book = (props) => {
   const {
