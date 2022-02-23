@@ -8,13 +8,13 @@ import { removeBook } from '../redux/reducers/books';
 
 const Book = (props) => {
   const {
-    category, title, chapter, completed, item_id,
+    category, title, author, chapter, completed, id,
   } = props;
 
   const dispatch = useDispatch();
 
   const removeBookFromStore = () => {
-    dispatch(removeBook(item_id));
+    dispatch(removeBook(id));
   };
 
   return (
@@ -28,13 +28,15 @@ const Book = (props) => {
           <li className="title">
             {title}
           </li>
-          <li className="author">The Author Himself</li>
+          <li className="author">
+            {author}
+          </li>
           <li>
-            <button type="button" value={item_id}>Comments</button>
+            <button type="button" value={id}>Comments</button>
             {' | '}
             <button type="button" onClick={removeBookFromStore}>Remove</button>
             {' | '}
-            <button type="button" value={item_id}>Edit</button>
+            <button type="button" value={id}>Edit</button>
           </li>
         </ul>
       </div>
@@ -64,7 +66,7 @@ const Book = (props) => {
             {chapter}
           </li>
           <li className="py-2">
-            <button type="button" value={item_id}>UPDATE PROGRESS</button>
+            <button type="button" value={id}>UPDATE PROGRESS</button>
           </li>
         </ul>
       </div>
@@ -73,8 +75,9 @@ const Book = (props) => {
 };
 
 Book.propTypes = {
-  item_id: PropTypes.number.isRequired,
+  id: PropTypes.number.isRequired,
   category: PropTypes.string.isRequired,
+  author: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   chapter: PropTypes.number.isRequired,
   completed: PropTypes.number.isRequired,

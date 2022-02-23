@@ -18,7 +18,7 @@ const BookForm = () => {
       author,
       chapter: 1,
       completed: 75,
-      item_id: uuidv4(),
+      id: uuidv4(),
     };
     dispatch(addBook(newBook));
     setCategory('');
@@ -45,13 +45,7 @@ const BookForm = () => {
           </div>
 
           <div className="col-auto">
-            <select className="form-control" placeholder="Category" value={category} onChange={(e) => setCategory(e.target.value)}>
-              <option>Non-Fiction</option>
-              <option>Drama</option>
-              <option>Fantasy</option>
-              <option>Mistery</option>
-              <option>Customs</option>
-            </select>
+            <input type="text" className="form-control" placeholder="Category" value={category} onChange={(e) => setCategory(e.target.value)} />
           </div>
 
           <div className="col-auto">

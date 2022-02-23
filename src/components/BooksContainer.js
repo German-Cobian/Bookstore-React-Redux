@@ -2,29 +2,30 @@ import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import Book from './Book';
 import BookForm from './BookForm';
-import { fetchBooks } from '../redux/reducers/books';
+import { loadBooks } from '../redux/reducers/books';
 import 'react-circular-progressbar/dist/styles.css';
 
 const BooksContainer = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    fetchBooks(dispatch);
+    dispatch(loadBooks());
   }, []);
 
-  const bookStore = useSelector((store) => store.bookReducer.books);
+  const bookStore = useSelector((state) => state.bookReducer);
 
   return (
     <div className="books-container">
 
-      { Object.entries(bookStore).map(([key, value]) => (
-        <div className="book" key={value.id}>
+      { bookStore.map((book) => (
+        <div className="book" key={book.id}>
           <Book
-            category={value[0].category}
-            title={value[0].title}
-            chapter={1}
-            completed={75}
-            item_id={key}
+            category={book.category}
+            title={book.title}
+            author={book.author}
+            chapter={book.chapter}
+            completed={book.completed}
+            id={book.id}
           />
         </div>
       ))}
