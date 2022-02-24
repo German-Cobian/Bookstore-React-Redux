@@ -30,7 +30,7 @@ const BookForm = () => {
     <>
       <div className="form-container mt-5">
         <div className="border-top">
-          <h4 className="mt-4 add-form-title">
+          <h4 className="mt-4 add-form-title css-package">
             ADD NEW BOOK
           </h4>
           <form className="row" onSubmit={submitBookToStore}>
@@ -50,7 +50,7 @@ const BookForm = () => {
             </div>
 
             <div className="col-4">
-              <button type="submit" className="btn col-6 btn-add-book">ADD BOOK</button>
+              <button type="submit" className="btn col-6 btn-add-book css-package">ADD BOOK</button>
             </div>
           </form>
         </div>

@@ -21,21 +21,21 @@ const Book = (props) => {
     <div className="row">
       <div className="Book-info col">
         <ul>
-          <li className="category">
+          <li className="category css-package">
             {category}
           </li>
-          <li className="title">
+          <li className="title css-package">
             {title}
           </li>
-          <li className="author">
+          <li className="author css-package">
             {author}
           </li>
           <li>
-            <button type="button" className="comments" value={id}>Comments</button>
+            <button type="button" className="comments css-package" value={id}>Comments</button>
             {' | '}
-            <button type="button" className="remove" onClick={removeBookFromStore}>Remove</button>
+            <button type="button" className="remove css-package" onClick={removeBookFromStore}>Remove</button>
             {' | '}
-            <button type="button" className="edit" value={id}>Edit</button>
+            <button type="button" className="edit css-package" value={id}>Edit</button>
           </li>
         </ul>
       </div>
@@ -56,15 +56,15 @@ const Book = (props) => {
 
       <div className="col chapter-info">
         <ul>
-          <li className="current-chapter">
+          <li className="current-chapter css-package">
             CURRENT CHAPTER
           </li>
-          <li className="chapter">
+          <li className="chapter css-package">
             Chapter
             {chapter}
           </li>
           <li className="py-2">
-            <button type="button" className="btn update-button" value={id}>UPDATE PROGRESS</button>
+            <button type="button" className="btn update-button css-package" value={id}>UPDATE PROGRESS</button>
           </li>
         </ul>
       </div>
