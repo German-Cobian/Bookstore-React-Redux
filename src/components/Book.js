@@ -31,11 +31,11 @@ const Book = (props) => {
             {author}
           </li>
           <li>
-            <button type="button" value={id}>Comments</button>
+            <button type="button" className="comments" value={id}>Comments</button>
             {' | '}
-            <button type="button" onClick={removeBookFromStore}>Remove</button>
+            <button type="button" className="remove" onClick={removeBookFromStore}>Remove</button>
             {' | '}
-            <button type="button" value={id}>Edit</button>
+            <button type="button" className="edit" value={id}>Edit</button>
           </li>
         </ul>
       </div>
@@ -43,29 +43,28 @@ const Book = (props) => {
         <ul className="row">
           <li className="col">
             <CircularProgressbar value={completed} styles={{ root: { width: '100px', height: '100px' } }} />
-
           </li>
-          <li className="col">
-            <h2>
+          <li className="col-5 line-2">
+            <h2 className="">
               {completed}
               %
             </h2>
-            <p>Completed</p>
+            <p className="completed">Completed</p>
           </li>
         </ul>
-
       </div>
-      <div className="col">
+
+      <div className="col chapter-info">
         <ul>
-          <li>
+          <li className="current-chapter">
             CURRENT CHAPTER
           </li>
-          <li>
+          <li className="chapter">
             Chapter
             {chapter}
           </li>
           <li className="py-2">
-            <button type="button" value={id}>UPDATE PROGRESS</button>
+            <button type="button" className="btn update-button" value={id}>UPDATE PROGRESS</button>
           </li>
         </ul>
       </div>

@@ -1,0 +1,222 @@
+body {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+#root {
+  width: fit-content;
+  height: 68.563rem;
+  background-color: #f5f6fa;
+}
+
+.App {
+  background-color: #fafafa;
+  padding-bottom: 1rem;
+  width: 87.5rem;
+  height: 68.563rem;
+}
+
+.nav {
+  padding-left: 2% !important;
+  background-color: #fff;
+  height: 3rem;
+}
+
+.navLinks-left {
+  font-size: 0.8rem;
+}
+
+.user {
+  height:3rem;
+  position: absolute;
+  left: 72rem;
+  top: 1px;
+}
+
+a {
+  text-decoration: none;
+  color: #181818 !important;
+}
+
+.active-link {
+  color: #121212 !important;
+}
+
+li {
+  list-style: none;
+}
+
+form {
+  width: 1440px !important;
+}
+
+.form-container {
+  margin-left: 3.25rem;
+  margin-right: 3.25rem;
+  width: 75rem;
+  padding: 0;
+  margin-bottom: 0% !important;
+}
+
+.add-form-title {
+  border-top: 1px solid #dee2e6 !important;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  height: 4rem;
+  padding-top: 1rem !important;
+  font-family: Montserrat, "Times New Roman", Times, serif;
+  font-size: 1.25rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.18px;
+  color: #888;
+}
+
+.btn-add-book {
+  width: 11.5rem;
+  height: 2.35rem;
+  border-radius: 3px;
+  background-color: #0290ff;
+  font-family: RobotoSlab, "Times New Roman", Times, serif !important;
+  font-size: 0.813rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #fff;
+}
+
+.book {
+  background-color: #fafafa;
+}
+
+.category {
+  width: 12.313rem;
+  height: 1.125rem;
+  margin: 0 2.438rem 0 0;
+  opacity: 0.5;
+  font-family: Montserrat, "Times New Roman", Times, serif !important;
+  font-size: 0.875rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
+}
+
+.title {
+  width: 12.313rem;
+  height: 1.813rem;
+  margin: 0.188rem 20.188rem 0 0;
+  font-family: RobotoSlab, "Times New Roman", Times, serif !important;
+  font-size: 1.375rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.2px;
+  color: #121212;
+}
+
+.author {
+  width: 6.688rem;
+  height: 1.188rem;
+  margin: 0.25rem 0 0;
+  font-family: RobotoSlab, "Times New Roman", Times, serif;
+  font-size: 0.875rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4386bf;
+}
+
+.comments,
+.remove,
+.edit {
+  width: 4.563rem;
+  height: 1.188rem;
+  font-family: RobotoSlab, "Times New Roman", Times, serif !important;
+  font-size: 0.875rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4386bf;
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: inherit;
+  padding: 0% !important;
+  margin: 3% 0% !important;
+}
+
+.line1 {
+  width: 0.125rem;
+  height: 1.5rem;
+  color: #e8e8e8;
+}
+
+.line-2 {
+  border-right: 1px solid #dee2e6 !important;
+}
+
+.completed {
+  opacity: 0.5;
+  font-family: Montserrat, "Times New Roman", Times, serif !important;
+  font-size: 0.875rem;
+  color: #121212;
+}
+
+.current-chapter {
+  width: 7.875rem;
+  height: 1.125rem;
+  margin: 0.063rem 3.625rem 0 1.688rem;
+  opacity: 0.5;
+  font-family: RobotoSlab, "Times New Roman", Times, serif !important;
+  font-size: 0.813rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
+}
+
+.chapter {
+  width: 4.688rem;
+  height: 1.313rem;
+  margin: 0.438rem 6.813rem 0.25rem 1.688rem;
+  font-family: RobotoSlab, "Times New Roman", Times, serif !important;
+  font-size: 1rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.4px;
+  color: #121212;
+}
+
+.update-button {
+  width: 11.5rem;
+  height: 2.063rem;
+  margin: 0.75rem 0 0.563rem 1.688rem;
+  padding: 0.438rem 1.188rem 0.5rem 1.375rem;
+  border-radius: 3px;
+  background-color: #0290ff;
+  font-family: RobotoSlab, "Times New Roman", Times, serif !important;
+  font-size: 0.813rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #fff;
+}

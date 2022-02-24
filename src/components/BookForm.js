@@ -28,30 +28,32 @@ const BookForm = () => {
 
   return (
     <>
-      <div className="form-container">
-        <h4>
-          ADD NEW BOOK
-        </h4>
-        <form className="row gy-2 gx-3 align-items-center" onSubmit={submitBookToStore}>
-          <div className="col-auto">
-            <div className="input-group book-title">
-              <input type="text" className="form-control" placeholder="Book title" value={title} onChange={(e) => setTitle(e.target.value)} />
+      <div className="form-container mt-5">
+        <div className="border-top">
+          <h4 className="mt-4 add-form-title">
+            ADD NEW BOOK
+          </h4>
+          <form className="row" onSubmit={submitBookToStore}>
+            <div className="col-4">
+              <div className="input-group">
+                <input type="text" className="form-control" placeholder="Book title" value={title} onChange={(e) => setTitle(e.target.value)} />
+              </div>
             </div>
-          </div>
-          <div className="col-auto">
-            <div className="input-group book-author">
-              <input type="text" className="form-control" placeholder="Author" value={author} onChange={(e) => setAuthor(e.target.value)} />
+            <div className="col-2">
+              <div className="input-group">
+                <input type="text" className="form-control" placeholder="Author" value={author} onChange={(e) => setAuthor(e.target.value)} />
+              </div>
             </div>
-          </div>
 
-          <div className="col-auto">
-            <input type="text" className="form-control" placeholder="Category" value={category} onChange={(e) => setCategory(e.target.value)} />
-          </div>
+            <div className="col-2">
+              <input type="text" className="form-control" placeholder="Category" value={category} onChange={(e) => setCategory(e.target.value)} />
+            </div>
 
-          <div className="col-auto">
-            <button type="submit" className="btn btn-primary">ADD BOOK</button>
-          </div>
-        </form>
+            <div className="col-4">
+              <button type="submit" className="btn col-6 btn-add-book">ADD BOOK</button>
+            </div>
+          </form>
+        </div>
       </div>
     </>
   );

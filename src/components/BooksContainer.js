@@ -15,21 +15,22 @@ const BooksContainer = () => {
   const bookStore = useSelector((state) => state.bookReducer);
 
   return (
-    <div className="books-container">
+    <div>
+      <div className="books-container mt-5">
 
-      { bookStore.map((book) => (
-        <div className="book" key={book.id}>
-          <Book
-            category={book.category}
-            title={book.title}
-            author={book.author}
-            chapter={book.chapter}
-            completed={book.completed}
-            id={book.id}
-          />
-        </div>
-      ))}
-
+        { bookStore.map((book) => (
+          <div className="book border my-2 mx-5 pt-4" key={book.id}>
+            <Book
+              category={book.category}
+              title={book.title}
+              author={book.author}
+              chapter={book.chapter}
+              completed={book.completed}
+              id={book.id}
+            />
+          </div>
+        ))}
+      </div>
       <BookForm />
     </div>
   );

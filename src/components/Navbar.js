@@ -1,37 +1,45 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import user from '../assets/user.png';
 
 const Navbar = () => {
   const links = [
     {
       id: 1,
       path: '/',
-      text: 'BooksContainer',
+      text: 'BOOKS',
     },
     {
       id: 2,
       path: '/categories',
-      text: 'Categories',
+      text: 'CATEGORIES',
     },
   ];
   return (
-    <ul className="nav p-3 d-flex flex-row justify-content-between">
-      <li className="nav-item">
-        <h4 className="nav-link title">
-          Bookstore
-        </h4>
-        {
-          links.map((link) => (
-            <li className="nav-item " key={link.id}>
-              <h4 className="nav-link">
-                <NavLink to={link.path} activeClassName="active-link" exact>{link.text}</NavLink>
+    <div className="nav">
 
-              </h4>
-            </li>
-          ))
-        }
-      </li>
-    </ul>
+      <div className="d-flex flex-row justify-content-between">
+        <div className="px-3 d-flex flex-row justify-content-left">
+          <div className="nav-item">
+            <h4 className="nav-link nav-title">
+              Bookstore CMS
+            </h4>
+          </div>
+          {
+            links.map((link) => (
+              <li className="nav-item " key={link.id}>
+                <h4 className="nav-link navLinks-left mt-2">
+                  <NavLink to={link.path} activeClassName="active-link" exact>{link.text}</NavLink>
+                </h4>
+              </li>
+            ))
+          }
+        </div>
+        <div>
+          <img src={user} alt="user" className="user" />
+        </div>
+      </div>
+    </div>
   );
 };
 
