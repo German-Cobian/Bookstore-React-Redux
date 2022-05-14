@@ -6,7 +6,7 @@ A React-Redux app that allows for the user to input a book with the information 
 
 It then fetches and displays info on all books contained in that API.
 
-![Books listing](/src/assets/Books listing.png?raw=true "Books listing")
+![Books listing](/src/assets/Books-listing.png?raw=true "Books listing")
 
 The user can also remove an existing book and its associated info from the list.
 
